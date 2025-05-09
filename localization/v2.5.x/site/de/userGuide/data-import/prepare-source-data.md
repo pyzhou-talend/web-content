@@ -3,8 +3,8 @@ id: prepare-source-data.md
 order: 0
 title: Quelldaten vorbereiten
 summary: >-
-  Auf dieser Seite geht es um etwas, das Sie bedenken sollten, bevor Sie Daten
-  in großen Mengen in Ihre Sammlung einfügen.
+  Auf dieser Seite geht es um etwas, das Sie bedenken sollten, bevor Sie mit der
+  Masseneintragung von Daten in Ihre Sammlung beginnen.
 ---
 <h1 id="Prepare-Source-Data" class="common-anchor-header">Quelldaten vorbereiten<button data-href="#Prepare-Source-Data" class="anchor-icon" translate="no">
       <svg translate="no"
@@ -21,7 +21,7 @@ summary: >-
           d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"
         ></path>
       </svg>
-    </button></h1><p>Auf dieser Seite werden einige Punkte besprochen, die Sie beachten sollten, bevor Sie mit dem Einfügen von Massendaten in Ihre Sammlung beginnen.</p>
+    </button></h1><p>Auf dieser Seite werden einige Punkte behandelt, die Sie beachten sollten, bevor Sie mit dem Einfügen von Daten in Ihre Sammlung beginnen.</p>
 <h2 id="Before-you-start" class="common-anchor-header">Bevor Sie beginnen<button data-href="#Before-you-start" class="anchor-icon" translate="no">
       <svg translate="no"
         aria-hidden="true"
@@ -49,14 +49,14 @@ summary: >-
 <li><p><strong>Ob AutoID aktiviert werden soll.</strong></p>
 <p>Das Feld <strong>id</strong> dient als Primärfeld der Sammlung. Um das Primärfeld automatisch zu inkrementieren, können Sie <strong>AutoID</strong> im Schema aktivieren. In diesem Fall sollten Sie das <strong>id-Feld</strong> aus jeder Zeile der Quelldaten ausschließen.</p></li>
 <li><p><strong>Dynamische Felder aktivieren</strong></p>
-<p>Die Zielsammlung kann auch Felder speichern, die nicht in ihrem vordefinierten Schema enthalten sind, wenn das Schema dynamische Felder zulässt. Das <strong>$meta-Feld</strong> ist ein reserviertes JSON-Feld, um dynamische Felder und ihre Werte in Schlüssel-Wert-Paaren zu speichern. Im obigen Diagramm werden die Felder <strong>dynamic_field_1</strong> und <strong>dynamic_field_2</strong> und die Werte als Schlüssel-Wert-Paare im <strong>$meta-Feld</strong> gespeichert.</p></li>
+<p>Die Zielsammlung kann auch Felder speichern, die nicht in ihrem vordefinierten Schema enthalten sind, wenn das Schema dynamische Felder zulässt. Das <strong><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Meta-∗∗Feld</mi><mi>ist ein reserviertes JSON-Feld, in dem dynamische Felder und ihre Werte in Form von Schlüsselwertpaaren gespeichert werden</mi><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">ImabovediagrammsinddieFelder∗∗∗dynamischesFeld1∗∗und∗∗∗dynamischesFeld2∗∗unddieWertealsSchlüssel-Wert-Paareim∗∗meta**-Feldreserviert,umdynamischeFelderundihreWerteinSchlüssel-Wert-Paarenzuhalten.</annotation></semantics></math></span><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><annotation encoding="application/x-tex">Im obigen Diagramm werden die Felder **dynamisches_Feld_1** und **dynamisches_Feld_2** und die Werte als Schlüssel-Wert-Paare im **</annotation></semantics></math></span></span></strong><span class="strut" style="height:0.6151em;"></span> <strong><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord mathnormal">meta</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span></span></span></span></strong><span class="mspace" style="margin-right:0.2222em;"></span> <strong><span class="katex"></span></strong><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span> <strong><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord mathnormal" style="margin-right:0.03588em;">∗feld</span><span class="mord">ist ein reserviertes JSON-Feld zur Aufnahme dynamischer Felder und ihrer Werte in Schlüssel</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">-</span></span></span></span></strong><span class="mspace" style="margin-right:0.2222em;"></span> <strong><span class="katex"></span></strong><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span> <strong><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord mathnormal">Wertpaaren</span><span class="mord">.</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">ImabovediagrammsinddieFelder</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span></span></span></span></strong><span class="mspace" style="margin-right:0.2222em;"></span> <strong><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9805em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal">∗dynamisch</span></span></span></span></span></strong><span class="pstrut" style="height:2.7em;"></span> <strong><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord"><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist-s">f</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathnormal">ield</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span></span></span><span class="vlist-s">1</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span></span></span></span></strong><span class="mspace" style="margin-right:0.2222em;"></span> <strong><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">∗und</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span></span></span></span></strong><span class="mspace" style="margin-right:0.2222em;"></span> <strong><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9805em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal">∗dynamisch</span></span></span></span></span></strong><span class="pstrut" style="height:2.7em;"></span> <strong><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord"><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist-s">f</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathnormal">ield</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span></span></span><span class="vlist-s">2</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span></span></span></span></strong><span class="mspace" style="margin-right:0.2222em;"></span> <strong><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">∗unddieWertewerdenalsSchlüssel</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">-</span></span></span></span></strong><span class="mspace" style="margin-right:0.2222em;"></span> <strong><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">Wertepaareim</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span></span></span></span></strong><span class="mspace" style="margin-right:0.2222em;"></span> <strong><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4653em;"></span><span class="mord">∗meta-Feld</span></span><span class="base"><span class="mord">gespeichert</span></span></span></span></strong>.</p></li>
 </ul>
-<p>Der folgende Code zeigt, wie Sie das Schema für die im obigen Diagramm dargestellte Sammlung einrichten.</p>
+<p>Der folgende Code zeigt, wie das Schema für die im obigen Diagramm dargestellte Sammlung eingerichtet wird.</p>
 <div class="language-python">
 <p>Weitere Informationen finden Sie unter <a href="https://milvus.io/api-reference/pymilvus/v2.4.x/MilvusClient/Collections/create_schema.md"><code translate="no">create_schema()</code></a> und <a href="https://milvus.io/api-reference/pymilvus/v2.4.x/MilvusClient/CollectionSchema/add_field.md"><code translate="no">add_field()</code></a> in der SDK-Referenz.</p>
 </div>
 <div class="language-java">
-<p>Um weitere Informationen zu erhalten, siehe <a href="https://milvus.io/api-reference/java/v2.4.x/v2/CollectionSchema/CollectionSchema.md"><code translate="no">CollectionSchema</code></a> in der SDK-Referenz.</p>
+<p>Weitere Informationen finden Sie in der SDK-Referenz unter <a href="https://milvus.io/api-reference/java/v2.4.x/v2/CollectionSchema/CollectionSchema.md"><code translate="no">CollectionSchema</code></a> in der SDK-Referenz.</p>
 </div>
 <div class="multipleCode">
  <a href="#python">Python </a> <a href="#java">Java</a></div>
@@ -270,7 +270,7 @@ writer = LocalBulkWriter(
 <li>Verweisen Sie auf das erstellte Schema in <code translate="no">CollectionSchema()</code>.</li>
 <li>Legen Sie das Ausgabeverzeichnis in <code translate="no">withLocalPath()</code> fest.</li>
 <li>Legen Sie den Ausgabedateityp in <code translate="no">withFileType()</code> fest.</li>
-<li>Wenn Ihr Datensatz eine große Anzahl von Datensätzen enthält, empfiehlt es sich, Ihre Daten zu segmentieren, indem Sie <code translate="no">withChunkSize()</code> auf einen geeigneten Wert setzen.</li>
+<li>Wenn Ihr Datensatz eine große Anzahl von Datensätzen enthält, empfiehlt es sich, Ihre Daten zu segmentieren, indem Sie <code translate="no">withChunkSize()</code> auf einen geeigneten Wert einstellen.</li>
 </ul>
 <p>Einzelheiten zu den Parametereinstellungen finden Sie unter LocalBulkWriter in der SDK-Referenz.</p>
 </div>
@@ -373,7 +373,7 @@ writer = RemoteBulkWriter(
         ></path>
       </svg>
     </button></h2><div class="language-python">
-<p>Ein <strong>BulkWriter</strong> hat zwei Methoden: <code translate="no">append_row()</code> fügt eine Zeile aus einem Quelldatensatz hinzu, und <code translate="no">commit()</code> überträgt hinzugefügte Zeilen in eine lokale Datei oder einen Remote Bucket.</p>
+<p>Ein <strong>BulkWriter</strong> hat zwei Methoden: <code translate="no">append_row()</code> fügt eine Zeile aus einem Quelldatensatz hinzu, und <code translate="no">commit()</code> überträgt hinzugefügte Zeilen in eine lokale Datei oder einen Remote-Bucket.</p>
 </div>
 <div class="language-java">
 <p>Ein <strong>BulkWriter</strong> hat zwei Methoden: <code translate="no">appendRow()</code> fügt eine Zeile aus einem Quelldatensatz hinzu, und <code translate="no">commit()</code> überträgt hinzugefügte Zeilen in eine lokale Datei oder einen Remote-Bucket.</p>
@@ -606,28 +606,28 @@ writer = RemoteBulkWriter(
 <span class="hljs-comment">#  [&#x27;d4220a9e-45be-4ccb-8cb5-bf09304b9f23/2.parquet&#x27;]]</span>
 <button class="copy-code-btn"></button></code></pre>
 <pre><code translate="no" class="language-java"><span class="hljs-comment">// localBulkWriter.getBatchFiles();</span>
-remoteBulkWriter.<span class="hljs-title function_">getBatchFiles</span>();
+remoteBulkWriter.getBatchFiles();
 
 <span class="hljs-comment">// </span>
 
 <span class="hljs-comment">// Close the BulkWriter</span>
 <span class="hljs-keyword">try</span> {
-    localBulkWriter.<span class="hljs-title function_">close</span>();
-    remoteBulkWriter.<span class="hljs-title function_">close</span>();            
-} <span class="hljs-keyword">catch</span> (<span class="hljs-title class_">Exception</span> e) {
+    localBulkWriter.close();
+    remoteBulkWriter.close();            
+} <span class="hljs-keyword">catch</span> (Exception e) {
     <span class="hljs-comment">// <span class="hljs-doctag">TODO:</span> handle exception</span>
-    e.<span class="hljs-title function_">printStackTrace</span>();
+    e.printStackTrace();
 }
 <button class="copy-code-btn"></button></code></pre>
-<p><strong>BulkWriter</strong> generiert eine UUID, erstellt einen Unterordner unter Verwendung der UUID im angegebenen Ausgabeverzeichnis und legt alle generierten Dateien in diesem Unterordner ab. <a href="https://assets.zilliz.com/bulk_writer.zip">Klicken Sie hier</a>, um die vorbereiteten Beispieldaten herunterzuladen.</p>
+<p><strong>BulkWriter</strong> generiert eine UUID, erstellt einen Unterordner mit der UUID im angegebenen Ausgabeverzeichnis und legt alle generierten Dateien in diesem Unterordner ab. <a href="https://assets.zilliz.com/bulk_writer.zip">Klicken Sie hier</a>, um die vorbereiteten Beispieldaten herunterzuladen.</p>
 <p>Mögliche Ordnerstrukturen sind wie folgt:</p>
 <pre><code translate="no" class="language-bash"><span class="hljs-comment"># JSON</span>
 ├── folder
 │   └── 45ae1139-1d87-4aff-85f5-0039111f9e6b
-│       └── <span class="hljs-number">1.j</span>son 
+│       └── 1.json 
 
 <span class="hljs-comment"># Parquet</span>
 ├── folder
 │   └── 45ae1139-1d87-4aff-85f5-0039111f9e6b
-│       └── <span class="hljs-number">1.</span>parquet 
+│       └── 1.parquet 
 <button class="copy-code-btn"></button></code></pre>

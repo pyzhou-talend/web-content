@@ -47,14 +47,14 @@ summary: 이 페이지에서는 컬렉션에 데이터를 대량으로 삽입하
 <li><p><strong>자동 ID 활성화 여부</strong></p>
 <p><strong>id</strong> 필드는 컬렉션의 기본 필드 역할을 합니다. 기본 필드가 자동으로 증가하도록 하려면 스키마에서 <strong>AutoID를</strong> 활성화하면 됩니다. 이 경우 소스 데이터의 각 행에서 <strong>id</strong> 필드를 제외해야 합니다.</p></li>
 <li><p><strong>동적 필드 활성화 여부</strong></p>
-<p>스키마에서 동적 필드를 활성화하는 경우 대상 컬렉션은 사전 정의된 스키마에 포함되지 않은 필드도 저장할 수 있습니다. <strong> 메타</strong> 필드는 동적 필드와 해당 값을 키-값 쌍으로 보유하기 위해 예약된 JSON 필드입니다. 위 다이어그램에서 <strong>dynamic_field_1</strong> 및 <strong>dynamic_field_2</strong> 필드와 값은 <strong>$meta</strong> 필드에 키-값 쌍으로 저장됩니다.</p></li>
+<p>스키마에서 동적 필드를 활성화하는 경우 대상 컬렉션은 사전 정의된 스키마에 포함되지 않은 필드도 저장할 수 있습니다. <strong><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>메타∗∗ 필드는 동적 필드와 그 값인 키-값 쌍을 보유하기 위해 제공되는</mi><mi>JSON</mi><mi>필드입니다</mi><mi mathvariant="normal">.</mi><mi>위</mi><mo>다이어그램에서∗∗dynamicfield1∗∗</mo><mi>및∗∗dynamicfield2∗∗ 필드는</mi></mrow><annotation encoding="application/x-tex">동적 필드와 해당 값을 키-값 쌍으로</annotation><mrow><mi>저장하기 위해∗∗meta**</mi></mrow><annotation encoding="application/x-tex">필드에 키-값 쌍으로</annotation><mrow><mi>저장되는</mi></mrow><annotation encoding="application/x-tex">예약된 JSON 필드입니다.</annotation></semantics></math></span><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><annotation encoding="application/x-tex">위 다이어그램에서 **dynamic_field_1** 및 **dynamic_field_2** 필드와 값은 **</annotation></semantics></math></span></span></strong><span class="strut" style="height:0.6151em;"></span> <strong><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord mathnormal">메타</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span></span></span></span></strong><span class="mspace" style="margin-right:0.2222em;"></span> <strong><span class="katex"></span></strong><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span> <strong><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord mathnormal" style="margin-right:0.03588em;">∗필드는</span></span></span> 동적 필드와 그 값을 키-값 쌍으로<span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><annotation encoding="application/x-tex">저장하기</annotation></semantics></math></span> 위해 예약된 JSON 필드로서</span></strong><span class="mspace" style="margin-right:0.2222em;"></span> <strong><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mbin">-</span></span></span></span></strong><span class="mspace" style="margin-right:0.2222em;"></span> <strong><span class="katex"></span></strong><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span> <strong><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord mathnormal">값</span><span class="mord mathnormal">쌍으로</span></span></span> 저장됩니다<span class="katex-html" aria-hidden="true"><span class="base"><span class="mord">.</span><span class="mord mathnormal">아래</span><span class="mpunct"> 다이어그램에서</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">thefields</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span></span></span></span></strong><span class="mspace" style="margin-right:0.2222em;"></span> <strong><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9805em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal">∗dynamic</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span></span></span><span class="vlist-s">f</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathnormal">ield</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span></span></span><span class="vlist-s">1</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span> ∗</span></span></span></strong> <strong><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mbin">∗and</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span></span></span></span></strong><span class="mspace" style="margin-right:0.2222em;"></span> <strong><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9805em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal">∗dynamic</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span></span></span><span class="vlist-s">f</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathnormal">ield</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span></span></span><span class="vlist-s">2</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span> ∗</span></span></span></strong> <strong><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">∗andthevalueswillbesavedaskey</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">-</span></span></span></span></strong><span class="mspace" style="margin-right:0.2222em;"></span> <strong><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">valuepairsinthe</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span></span></span></span></strong><span class="mspace" style="margin-right:0.2222em;"></span> <strong><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4653em;"></span> ∗meta 필드.</span></span></span></strong> </p></li>
 </ul>
-<p>다음 코드는 위 다이어그램에 설명된 컬렉션의 스키마를 설정하는 방법을 보여줍니다.</p>
+<p>다음 코드는 위 다이어그램에 표시된 컬렉션의 스키마를 설정하는 방법을 보여줍니다.</p>
 <div class="language-python">
 <p>자세한 정보를 얻으려면 <a href="https://milvus.io/api-reference/pymilvus/v2.4.x/MilvusClient/Collections/create_schema.md"><code translate="no">create_schema()</code></a> 및 <a href="https://milvus.io/api-reference/pymilvus/v2.4.x/MilvusClient/CollectionSchema/add_field.md"><code translate="no">add_field()</code></a> 를 참조하세요.</p>
 </div>
 <div class="language-java">
-<p>자세한 정보를 얻으려면 SDK 참조에서 <a href="https://milvus.io/api-reference/java/v2.4.x/v2/CollectionSchema/CollectionSchema.md"><code translate="no">CollectionSchema</code></a> 를 참조하세요.</p>
+<p>더 자세한 정보를 얻으려면 <a href="https://milvus.io/api-reference/java/v2.4.x/v2/CollectionSchema/CollectionSchema.md"><code translate="no">CollectionSchema</code></a> 를 참조하세요.</p>
 </div>
 <div class="multipleCode">
  <a href="#python">Python </a> <a href="#java">Java</a></div>
@@ -604,17 +604,17 @@ writer = RemoteBulkWriter(
 <span class="hljs-comment">#  [&#x27;d4220a9e-45be-4ccb-8cb5-bf09304b9f23/2.parquet&#x27;]]</span>
 <button class="copy-code-btn"></button></code></pre>
 <pre><code translate="no" class="language-java"><span class="hljs-comment">// localBulkWriter.getBatchFiles();</span>
-remoteBulkWriter.<span class="hljs-title function_">getBatchFiles</span>();
+remoteBulkWriter.getBatchFiles();
 
 <span class="hljs-comment">// </span>
 
 <span class="hljs-comment">// Close the BulkWriter</span>
 <span class="hljs-keyword">try</span> {
-    localBulkWriter.<span class="hljs-title function_">close</span>();
-    remoteBulkWriter.<span class="hljs-title function_">close</span>();            
-} <span class="hljs-keyword">catch</span> (<span class="hljs-title class_">Exception</span> e) {
+    localBulkWriter.close();
+    remoteBulkWriter.close();            
+} <span class="hljs-keyword">catch</span> (Exception e) {
     <span class="hljs-comment">// <span class="hljs-doctag">TODO:</span> handle exception</span>
-    e.<span class="hljs-title function_">printStackTrace</span>();
+    e.printStackTrace();
 }
 <button class="copy-code-btn"></button></code></pre>
 <p><strong>벌크라이터는</strong> UUID를 생성하고, 제공된 출력 디렉토리에 UUID를 사용하여 하위 폴더를 생성하며, 생성된 모든 파일을 하위 폴더에 배치합니다. 준비된 샘플 데이터를 다운로드하려면 <a href="https://assets.zilliz.com/bulk_writer.zip">여기를 클릭하세요</a>.</p>
@@ -622,10 +622,10 @@ remoteBulkWriter.<span class="hljs-title function_">getBatchFiles</span>();
 <pre><code translate="no" class="language-bash"><span class="hljs-comment"># JSON</span>
 ├── folder
 │   └── 45ae1139-1d87-4aff-85f5-0039111f9e6b
-│       └── <span class="hljs-number">1.j</span>son 
+│       └── 1.json 
 
 <span class="hljs-comment"># Parquet</span>
 ├── folder
 │   └── 45ae1139-1d87-4aff-85f5-0039111f9e6b
-│       └── <span class="hljs-number">1.</span>parquet 
+│       └── 1.parquet 
 <button class="copy-code-btn"></button></code></pre>

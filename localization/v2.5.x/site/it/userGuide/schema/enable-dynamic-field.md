@@ -39,8 +39,8 @@ summary: >-
         ></path>
       </svg>
     </button></h2><p>In Milvus è possibile creare uno schema di raccolta impostando i nomi e i tipi di dati per ogni campo della raccolta. Quando si aggiunge un campo allo schema, bisogna assicurarsi che questo campo sia incluso nell'entità che si intende inserire. Se si desidera che alcuni campi siano opzionali, è possibile attivare il campo dinamico.</p>
-<p>Il campo dinamico è un campo riservato denominato <code translate="no">$meta</code>, di tipo JavaScript Object Notation (JSON). Tutti i campi delle entità che non sono definiti nello schema saranno memorizzati in questo campo JSON riservato come coppie chiave-valore.</p>
-<p>Per un insieme con il campo dinamico abilitato, è possibile utilizzare le chiavi del campo dinamico per il filtraggio scalare, proprio come si farebbe con i campi esplicitamente definiti nello schema.</p>
+<p>Il campo dinamico è un campo riservato denominato <strong>$meta</strong>, di tipo JavaScript Object Notation (JSON). Tutti i campi delle entità che non sono definiti nello schema saranno memorizzati in questo campo JSON riservato come coppie chiave-valore.</p>
+<p>Per una collezione con il campo dinamico abilitato, è possibile utilizzare le chiavi del campo dinamico per il filtraggio scalare, proprio come si farebbe con i campi esplicitamente definiti nello schema.</p>
 <h2 id="Enable-dynamic-field" class="common-anchor-header">Abilitare il campo dinamico<button data-href="#Enable-dynamic-field" class="anchor-icon" translate="no">
       <svg translate="no"
         aria-hidden="true"
@@ -154,7 +154,7 @@ err = client.CreateCollection(ctx, milvusclient.SimpleCreateCollectionOptions(<s
         ></path>
       </svg>
     </button></h2><p>Quando il campo dinamico è abilitato nella raccolta, tutti i campi e i loro valori non definiti nello schema saranno memorizzati come coppie chiave-valore nel campo dinamico.</p>
-<p>Ad esempio, si supponga che lo schema della raccolta definisca solo due campi, denominati <code translate="no">id</code> e <code translate="no">vector</code>, con il campo dinamico abilitato. Ora si inserisce il seguente set di dati in questa raccolta.</p>
+<p>Ad esempio, si supponga che lo schema della raccolta definisca solo due campi, denominati <code translate="no">id</code> e <code translate="no">vector</code>, con il campo dinamico abilitato. Ora, si inserisce il seguente set di dati in questa raccolta.</p>
 <pre><code translate="no" class="language-json"><span class="hljs-punctuation">[</span>
     <span class="hljs-punctuation">{</span>id<span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span> vector<span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-number">0.3580376395471989</span><span class="hljs-punctuation">,</span> <span class="hljs-number">-0.6023495712049978</span><span class="hljs-punctuation">,</span> <span class="hljs-number">0.18414012509913835</span><span class="hljs-punctuation">,</span> <span class="hljs-number">-0.26286205330961354</span><span class="hljs-punctuation">,</span> <span class="hljs-number">0.9029438446296592</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span> color<span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;pink_8682&quot;</span><span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
     <span class="hljs-punctuation">{</span>id<span class="hljs-punctuation">:</span> <span class="hljs-number">1</span><span class="hljs-punctuation">,</span> vector<span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-number">0.19886812562848388</span><span class="hljs-punctuation">,</span> <span class="hljs-number">0.06023560599112088</span><span class="hljs-punctuation">,</span> <span class="hljs-number">0.6976963061752597</span><span class="hljs-punctuation">,</span> <span class="hljs-number">0.2614474506242501</span><span class="hljs-punctuation">,</span> <span class="hljs-number">0.838729485096104</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span> color<span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;red_7025&quot;</span><span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
@@ -323,7 +323,7 @@ curl --request POST \
 <span class="hljs-comment">#     }</span>
 <span class="hljs-comment"># }</span>
 <button class="copy-code-btn"></button></code></pre>
-<h3 id="Index-a-scalar-field-in-the-dynamic-field" class="common-anchor-header">Indicizzare un campo scalare nel campo dinamico</h3><p>Quando si attiva un campo dinamico, qualsiasi campo scalare non definito viene memorizzato come coppia chiave-valore in formato JSON. Milvus supporta la creazione di un indice su tale campo scalare indefinito, costruendo un indice di percorso JSON. Ecco come funziona:</p>
+<h3 id="Index-a-scalar-field-in-the-dynamic-field" class="common-anchor-header">Indicizzare un campo scalare nel campo dinamico</h3><p>Quando si attiva un campo dinamico, qualsiasi campo scalare non definito viene memorizzato come coppia chiave-valore in formato JSON. Milvus supporta la creazione di un indice su un campo scalare non definito, costruendo un indice di percorso JSON. Ecco come funziona:</p>
 <ol>
 <li><p><strong>Scegliere la chiave del campo dinamico</strong> che si vuole indicizzare. Ad esempio, <code translate="no">&quot;color&quot;</code> nell'esempio precedente.</p></li>
 <li><p><strong>Decidere un tipo di cast</strong> per i valori trovati in quella chiave. Milvus analizzerà il campo dinamico, estrarrà i valori sotto la chiave specificata e li trasformerà nel tipo configurato.</p>

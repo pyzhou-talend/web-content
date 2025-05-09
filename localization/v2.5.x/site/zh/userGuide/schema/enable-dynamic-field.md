@@ -37,7 +37,7 @@ summary: >-
         ></path>
       </svg>
     </button></h2><p>在 Milvus 中，可以通过设置 Collections 中每个字段的名称和数据类型来创建 Collections Schema。向 Schema 中添加字段时，请确保该字段包含在要插入的实体中。如果希望某些字段是可选的，启用动态字段是一种选择。</p>
-<p>动态字段是一个保留字段，名为<code translate="no">$meta</code> ，属于 JavaScript Object Notation（JSON）类型。实体中任何未在 Schema 中定义的字段都将以键值对的形式存储在这个保留的 JSON 字段中。</p>
+<p>动态字段是一个名为<strong>$meta</strong> 的保留字段，属于 JavaScript Object Notation（JSON）类型。实体中任何未在 Schema 中定义的字段都将以键值对的形式存储在这个保留的 JSON 字段中。</p>
 <p>对于启用了动态字段的 Collections，可以使用动态字段中的键进行标量过滤，就像使用模式中明确定义的字段一样。</p>
 <h2 id="Enable-dynamic-field" class="common-anchor-header">启用动态字段<button data-href="#Enable-dynamic-field" class="anchor-icon" translate="no">
       <svg translate="no"

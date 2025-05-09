@@ -3,8 +3,8 @@ id: prepare-source-data.md
 order: 0
 title: Подготовка исходных данных
 summary: >-
-  На этой странице рассказывается о том, что следует учесть, прежде чем начать
-  массово вставлять данные в свою коллекцию.
+  На этой странице рассказывается о том, что следует учесть перед тем, как
+  начать массово вставлять данные в свою коллекцию.
 ---
 <h1 id="Prepare-Source-Data" class="common-anchor-header">Подготовка исходных данных<button data-href="#Prepare-Source-Data" class="anchor-icon" translate="no">
       <svg translate="no"
@@ -49,14 +49,14 @@ summary: >-
 <li><p><strong>Включать ли автоидентификацию.</strong></p>
 <p>Поле <strong>id</strong> служит первичным полем коллекции. Чтобы первичное поле автоматически увеличивалось, можно включить в схему функцию <strong>AutoID</strong>. В этом случае необходимо исключить поле <strong>id</strong> из каждой строки исходных данных.</p></li>
 <li><p><strong>Включать ли динамические поля</strong></p>
-<p>Целевая коллекция также может хранить поля, не включенные в ее предопределенную схему, если схема включает динамические поля. Поле <strong>$meta</strong> - это зарезервированное поле JSON для хранения динамических полей и их значений в виде пар ключ-значение. На приведенной выше схеме поля <strong>dynamic_field_1</strong> и <strong>dynamic_field_2</strong> и их значения будут сохранены как пары ключ-значение в поле <strong>$meta</strong>.</p></li>
+<p>Целевая коллекция также может хранить поля, не включенные в ее предопределенную схему, если схема включает динамические поля. <strong><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Поле</mi><mi>meta∗∗∗∗</mi><mi>является сохраненным полем JSON для хранения динамических полей и их значений в виде пар "ключ-значение"</mi><mi mathvariant="normal">.</mi><mi>На этой</mi><mi>диаграмме</mi><mi>поляfields∗∗∗dynamicfield1∗∗∗ и∗∗∗dynamicfield2∗∗∗ и</mi><mo>valueswillbesavedaskey-valuepairsinthe∗∗meta**</mo></mrow><annotation encoding="application/x-tex">- это зарезервированное поле JSON для хранения динамических полей и их значений в парах ключ-значение.</annotation></semantics></math></span><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><annotation encoding="application/x-tex">На приведенной выше схеме поля **dynamic_field_1** и **dynamic_field_2** и их значения будут сохранены как пары ключ-значение в поле **</annotation></semantics></math></span></span></strong><span class="strut" style="height:0.6151em;"></span> <strong><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord mathnormal">meta</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span></span></span></span></strong><span class="mspace" style="margin-right:0.2222em;"></span> <strong><span class="katex"></span></strong><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span> <strong><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord mathnormal" style="margin-right:0.03588em;">∗fieldisareservedJSONfieldtoholddynamicfieldsandtheirvaluesinkey</span></span></span></span></strong><span class="mspace" style="margin-right:0.2222em;"></span> <strong><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mbin">-</span></span></span></span></strong><span class="mspace" style="margin-right:0.2222em;"></span> <strong><span class="katex"></span></strong><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span> <strong><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord mathnormal">valuepairs</span><span class="mord">.</span><span class="mord mathnormal">На этой</span><span class="mord mathnormal">диаграмме</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">поля</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span></span></span></span></strong><span class="mspace" style="margin-right:0.2222em;"></span> <strong><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9805em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal">∗dynamic</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span></span></span><span class="vlist-s">f</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathnormal">ield</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span></span></span><span class="vlist-s">1</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span> ∗</span></span></span></strong> <strong><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">∗and</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span></span></span></span></strong><span class="mspace" style="margin-right:0.2222em;"></span> <strong><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9805em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal">∗dynamic</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span></span></span><span class="vlist-s">f</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathnormal">ield</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span></span></span><span class="vlist-s">2</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span> ∗</span></span></span></strong> <strong><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">∗andthevalueswillbesavedaskey</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">-</span></span></span></span></strong><span class="mspace" style="margin-right:0.2222em;"></span> <strong><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">valuepairsinthe</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span></span></span></span></strong><span class="mspace" style="margin-right:0.2222em;"></span> <strong><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4653em;"></span> ∗meta field.</span></span></span></strong> </p></li>
 </ul>
 <p>В следующем коде показано, как настроить схему для коллекции, показанной на рисунке выше.</p>
 <div class="language-python">
 <p>Для получения дополнительной информации обратитесь к <a href="https://milvus.io/api-reference/pymilvus/v2.4.x/MilvusClient/Collections/create_schema.md"><code translate="no">create_schema()</code></a> и <a href="https://milvus.io/api-reference/pymilvus/v2.4.x/MilvusClient/CollectionSchema/add_field.md"><code translate="no">add_field()</code></a> в справочнике SDK.</p>
 </div>
 <div class="language-java">
-<p>Чтобы получить дополнительную информацию, обратитесь к <a href="https://milvus.io/api-reference/java/v2.4.x/v2/CollectionSchema/CollectionSchema.md"><code translate="no">CollectionSchema</code></a> в справочнике SDK.</p>
+<p>Для получения дополнительной информации см. <a href="https://milvus.io/api-reference/java/v2.4.x/v2/CollectionSchema/CollectionSchema.md"><code translate="no">CollectionSchema</code></a> в справочнике SDK.</p>
 </div>
 <div class="multipleCode">
  <a href="#python">Python </a> <a href="#java">Java</a></div>
@@ -606,17 +606,17 @@ writer = RemoteBulkWriter(
 <span class="hljs-comment">#  [&#x27;d4220a9e-45be-4ccb-8cb5-bf09304b9f23/2.parquet&#x27;]]</span>
 <button class="copy-code-btn"></button></code></pre>
 <pre><code translate="no" class="language-java"><span class="hljs-comment">// localBulkWriter.getBatchFiles();</span>
-remoteBulkWriter.<span class="hljs-title function_">getBatchFiles</span>();
+remoteBulkWriter.getBatchFiles();
 
 <span class="hljs-comment">// </span>
 
 <span class="hljs-comment">// Close the BulkWriter</span>
 <span class="hljs-keyword">try</span> {
-    localBulkWriter.<span class="hljs-title function_">close</span>();
-    remoteBulkWriter.<span class="hljs-title function_">close</span>();            
-} <span class="hljs-keyword">catch</span> (<span class="hljs-title class_">Exception</span> e) {
+    localBulkWriter.close();
+    remoteBulkWriter.close();            
+} <span class="hljs-keyword">catch</span> (Exception e) {
     <span class="hljs-comment">// <span class="hljs-doctag">TODO:</span> handle exception</span>
-    e.<span class="hljs-title function_">printStackTrace</span>();
+    e.printStackTrace();
 }
 <button class="copy-code-btn"></button></code></pre>
 <p><strong>BulkWriter</strong> генерирует UUID, создает вложенную папку с UUID в предоставленном каталоге вывода и помещает все сгенерированные файлы в эту вложенную папку. <a href="https://assets.zilliz.com/bulk_writer.zip">Щелкните здесь</a>, чтобы загрузить готовый пример данных.</p>
@@ -624,10 +624,10 @@ remoteBulkWriter.<span class="hljs-title function_">getBatchFiles</span>();
 <pre><code translate="no" class="language-bash"><span class="hljs-comment"># JSON</span>
 ├── folder
 │   └── 45ae1139-1d87-4aff-85f5-0039111f9e6b
-│       └── <span class="hljs-number">1.j</span>son 
+│       └── 1.json 
 
 <span class="hljs-comment"># Parquet</span>
 ├── folder
 │   └── 45ae1139-1d87-4aff-85f5-0039111f9e6b
-│       └── <span class="hljs-number">1.</span>parquet 
+│       └── 1.parquet 
 <button class="copy-code-btn"></button></code></pre>

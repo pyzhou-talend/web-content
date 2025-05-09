@@ -748,6 +748,6 @@ curl --request POST \
     \&quot;params\&quot;: <span class="hljs-variable">$params</span>
 }&quot;</span>
 <button class="copy-code-btn"></button></code></pre>
-<p>Weitere Informationen zu Konsistenzstufen finden Sie unter <a href="/docs/de/consistency.md">Konsistenzstufe</a>.</p>
+<p>Weitere Informationen zu Konsistenzstufen finden Sie unter <a href="/docs/de/tune_consistency.md">Konsistenzstufe</a>.</p>
 <h3 id="Enable-Dynamic-Field" class="common-anchor-header">Dynamisches Feld aktivieren</h3><p>Das dynamische Feld in einer Sammlung ist ein reserviertes JavaScript Object Notation (JSON)-Feld namens <strong>$meta</strong>. Sobald Sie dieses Feld aktiviert haben, speichert Milvus alle nicht schema-definierten Felder, die in jeder Entität enthalten sind, und ihre Werte als Schlüssel-Wert-Paare in dem reservierten Feld.</p>
 <p>Einzelheiten zur Verwendung des dynamischen Feldes finden Sie unter <a href="/docs/de/enable-dynamic-field.md">Dynamisches Feld</a>.</p>

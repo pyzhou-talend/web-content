@@ -37,7 +37,7 @@ summary: >-
         ></path>
       </svg>
     </button></h2><p>Milvus에서는 컬렉션의 각 필드에 대한 이름과 데이터 유형을 설정하여 컬렉션 스키마를 만들 수 있습니다. 스키마에 필드를 추가할 때 이 필드가 삽입하려는 엔티티에 포함되어 있는지 확인하세요. 일부 필드를 선택 사항으로 사용하려는 경우 동적 필드를 활성화하는 것도 한 가지 옵션입니다.</p>
-<p>동적 필드는 JavaScript 객체 표기법(JSON) 유형인 <code translate="no">$meta</code> 이라는 이름의 예약 필드입니다. 스키마에 정의되지 않은 엔티티의 모든 필드는 이 예약된 JSON 필드에 키-값 쌍으로 저장됩니다.</p>
+<p>동적 필드는 <strong>$meta라는</strong> 이름의 예약된 필드이며 JSON(JavaScript 객체 표기법) 유형입니다. 스키마에 정의되지 않은 엔티티의 모든 필드는 이 예약된 JSON 필드에 키-값 쌍으로 저장됩니다.</p>
 <p>동적 필드가 활성화된 컬렉션의 경우 스키마에 명시적으로 정의된 필드와 마찬가지로 동적 필드의 키를 스칼라 필터링에 사용할 수 있습니다.</p>
 <h2 id="Enable-dynamic-field" class="common-anchor-header">동적 필드 활성화<button data-href="#Enable-dynamic-field" class="anchor-icon" translate="no">
       <svg translate="no"
@@ -423,7 +423,7 @@ curl --request POST \
     ]
 }&#x27;</span>
 <button class="copy-code-btn"></button></code></pre>
-<h3 id="Query-and-search-with-dynamic-field" class="common-anchor-header">동적 필드로 쿼리 및 검색</h3><p>Milvus는 쿼리 및 검색 중에 필터 표현식 사용을 지원하므로 결과에 포함할 필드를 지정할 수 있습니다. 다음 예제는 스키마에 정의되어 있지 않은 <code translate="no">color</code> 필드를 동적 필드를 사용하여 쿼리 및 검색을 수행하는 방법을 보여줍니다.</p>
+<h3 id="Query-and-search-with-dynamic-field" class="common-anchor-header">동적 필드로 쿼리 및 검색</h3><p>Milvus는 쿼리 및 검색 중에 필터 표현식 사용을 지원하여 결과에 포함할 필드를 지정할 수 있습니다. 다음 예제는 스키마에 정의되어 있지 않은 <code translate="no">color</code> 필드를 동적 필드를 사용하여 쿼리 및 검색을 수행하는 방법을 보여줍니다.</p>
 <div class="multipleCode">
    <a href="#python">파이썬</a> <a href="#java">자바</a> <a href="#javascript">NodeJS</a> <a href="#go">Go</a> <a href="#bash">cURL</a></div>
 <pre><code translate="no" class="language-python">query_vector = [<span class="hljs-number">0.3580376395471989</span>, -<span class="hljs-number">0.6023495712049978</span>, <span class="hljs-number">0.18414012509913835</span>, -<span class="hljs-number">0.26286205330961354</span>, <span class="hljs-number">0.9029438446296592</span>]
@@ -521,7 +521,7 @@ curl --request POST \
 }&#x27;</span>
 <span class="hljs-comment"># {&quot;code&quot;:0,&quot;cost&quot;:0,&quot;data&quot;:[{&quot;color&quot;:&quot;red_7025&quot;,&quot;distance&quot;:0.6290165,&quot;id&quot;:1},{&quot;color&quot;:&quot;red_4794&quot;,&quot;distance&quot;:0.5975797,&quot;id&quot;:4},{&quot;color&quot;:&quot;red_9392&quot;,&quot;distance&quot;:-0.24996185,&quot;id&quot;:6}]}</span>
 <button class="copy-code-btn"></button></code></pre>
-<p>위의 코드 예제에서 사용된 필터 표현식 <code translate="no">color like &quot;red%&quot; and likes &gt; 50</code> 에서 조건은 <code translate="no">color</code> 필드의 값이 <strong>"red"</strong>로 시작해야 한다고 지정합니다. 샘플 데이터에서 이 조건을 충족하는 엔티티는 두 개뿐입니다. 따라서 <code translate="no">limit</code> (topK)가 <code translate="no">3</code> 이하로 설정되면 이 두 엔티티가 모두 반환됩니다.</p>
+<p>위 코드 예제에서 사용된 필터 표현식 <code translate="no">color like &quot;red%&quot; and likes &gt; 50</code> 에서 조건은 <code translate="no">color</code> 필드의 값이 <strong>"red"</strong>로 시작해야 한다고 지정합니다. 샘플 데이터에서 이 조건을 충족하는 엔티티는 두 개뿐입니다. 따라서 <code translate="no">limit</code> (topK)가 <code translate="no">3</code> 이하로 설정되면 이 두 엔티티가 모두 반환됩니다.</p>
 <pre><code translate="no" class="language-json"><span class="hljs-punctuation">[</span>
     <span class="hljs-punctuation">{</span>
         <span class="hljs-attr">&quot;id&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-number">1</span><span class="hljs-punctuation">,</span> 

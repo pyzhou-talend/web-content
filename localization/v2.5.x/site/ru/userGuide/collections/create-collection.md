@@ -406,7 +406,7 @@ curl --request POST \
     \&quot;indexParams\&quot;: <span class="hljs-variable">$indexParams</span>
 }&quot;</span>
 <button class="copy-code-btn"></button></code></pre>
-<p>Вы также можете создать коллекцию без индексных параметров и добавить их впоследствии. В этом случае Milvus не загружает коллекцию при ее создании. .</p>
+<p>Вы также можете создать коллекцию без параметров индекса и добавить их впоследствии. В этом случае Milvus не загружает коллекцию при ее создании. .</p>
 <p>Следующий фрагмент кода демонстрирует, как создать коллекцию без коллекции, при этом статус загрузки коллекции при создании остается незагруженным.</p>
 <div class="multipleCode">
    <a href="#python">Python</a> <a href="#java">Java</a> <a href="#javascript">NodeJS</a> <a href="#go">Go</a> <a href="#bash">cURL</a></div>
@@ -629,7 +629,7 @@ curl --request POST \
     \&quot;params\&quot;: $params
 }&quot;
 <button class="copy-code-btn"></button></code></pre>
-<h3 id="Set-Collection-TTL" class="common-anchor-header">Установка TTL коллекции</h3><p>Если данные в коллекции должны быть сброшены в течение определенного периода, подумайте о том, чтобы установить время жизни коллекции (TTL) в секундах. Как только TTL истечет, Milvus удалит сущности в коллекции. Удаление происходит асинхронно, что означает, что поиск и запросы все еще возможны до завершения удаления.</p>
+<h3 id="Set-Collection-TTL" class="common-anchor-header">Установка TTL коллекции</h3><p>Если данные в коллекции должны быть сброшены в течение определенного периода времени, подумайте о том, чтобы установить время жизни коллекции (TTL) в секундах. Как только TTL истечет, Milvus удалит сущности в коллекции. Удаление происходит асинхронно, что означает, что поиск и запросы все еще возможны до завершения удаления.</p>
 <p>Следующий фрагмент кода устанавливает TTL на один день (86400 секунд). Рекомендуется устанавливать TTL как минимум на пару дней.</p>
 <div class="multipleCode">
    <a href="#python">Python</a> <a href="#java">Java</a> <a href="#javascript">NodeJS</a> <a href="#go">Go</a> <a href="#bash">cURL</a></div>
@@ -747,6 +747,6 @@ curl --request POST \
     \&quot;params\&quot;: <span class="hljs-variable">$params</span>
 }&quot;</span>
 <button class="copy-code-btn"></button></code></pre>
-<p>Подробнее об уровнях согласованности см. в разделе <a href="/docs/ru/consistency.md">Уровень согласованности</a>.</p>
+<p>Подробнее об уровнях согласованности см. в разделе <a href="/docs/ru/tune_consistency.md">Уровень согласованности</a>.</p>
 <h3 id="Enable-Dynamic-Field" class="common-anchor-header">Включение динамического поля</h3><p>Динамическое поле в коллекции - это зарезервированное поле JavaScript Object Notation (JSON) с именем <strong>$meta</strong>. После включения этого поля Milvus сохраняет все не определенные схемой поля, содержащиеся в каждой сущности, и их значения в виде пар ключ-значение в зарезервированном поле.</p>
 <p>Подробнее о том, как использовать динамическое поле, читайте в разделе <a href="/docs/ru/enable-dynamic-field.md">Динамическое поле</a>.</p>

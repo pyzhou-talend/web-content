@@ -744,6 +744,6 @@ curl --request POST \
     \&quot;params\&quot;: <span class="hljs-variable">$params</span>
 }&quot;</span>
 <button class="copy-code-btn"></button></code></pre>
-<p>有關一致性層級的更多資訊，請參閱<a href="/docs/zh-hant/consistency.md">一致性</a>層級。</p>
+<p>有關一致性層級的更多資訊，請參閱<a href="/docs/zh-hant/tune_consistency.md">一致性</a>層級。</p>
 <h3 id="Enable-Dynamic-Field" class="common-anchor-header">啟用動態欄位</h3><p>集合中的動態欄位是一個保留的 JavaScript Object Notation (JSON) 欄位，名為<strong>$meta</strong>。一旦啟用這個欄位，Milvus 會將每個實體中所有非模式定義的欄位及其值儲存為保留欄位中的鍵值對。</p>
 <p>有關如何使用動態欄位的詳細資訊，請參閱<a href="/docs/zh-hant/enable-dynamic-field.md">動態</a>欄位。</p>

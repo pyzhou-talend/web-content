@@ -36,8 +36,8 @@ summary: >-
         ></path>
       </svg>
     </button></h2><p>Milvusでは、コレクション内の各フィールドの名前とデータ型を設定することで、コレクションスキーマを作成できます。スキーマにフィールドを追加するときは、挿入するエンティティにこのフィールドが含まれていることを確認します。一部のフィールドをオプションにする場合は、ダイナミック・フィールドを有効にすることも 1 つの方法です。</p>
-<p>動的フィールドは、<code translate="no">$meta</code> という名前の予約フィールドで、JavaScript Object Notation（JSON）タイプです。スキーマで定義されていないエンティティのフィールドは、この予約済み JSON フィールドにキーと値のペアで格納されます。</p>
-<p>ダイナミック・フィールドが有効なコレクションでは、スキーマで明示的に定義されたフィールドと同様に、ダイナミック・ フィールドのキーを使用してスカラー・フィルタリングを行うことができます。</p>
+<p>ダイナミック・フィールドは、<strong>$meta</strong> という名前の予約フィールドで、JavaScript Object Notation (JSON) 型です。スキーマで定義されていないエンティティのフィールドはすべて、この予約済み JSON フィールドにキーと値のペアで格納されます。</p>
+<p>動的フィールドを有効にしたコレクションでは、スキーマで明示的に定義したフィールドと同様に、動的フィールドのキーを使用してスカラーフィルタリングを行うことができます。</p>
 <h2 id="Enable-dynamic-field" class="common-anchor-header">ダイナミック・フィールドの有効化<button data-href="#Enable-dynamic-field" class="anchor-icon" translate="no">
       <svg translate="no"
         aria-hidden="true"
@@ -328,7 +328,7 @@ curl --request POST \
 <li><p>サポートされている<code translate="no">json_cast_type</code> の値は、<code translate="no">bool</code> （または<code translate="no">BOOL</code> ）、<code translate="no">double</code> （または<code translate="no">DOUBLE</code> ）、<code translate="no">varchar</code> （または<code translate="no">VARCHAR</code> ）です。</p></li>
 <li><p>パースやキャストに失敗した場合（例えば、文字列をdoubleとしてパースしようとした場合）、その行はインデックス内でスキップされます。</p></li>
 </ul></li>
-<li><p>そのキーへの<strong>JSONパスを</strong> <code translate="no">json_path</code> として<strong>指定</strong>します。動的フィールドはJSONとして格納されるので、<code translate="no">&quot;color&quot;</code> のように指定することもできますし、入れ子構造になっている場合は、より深いパスを指定することもできます（例えば、<code translate="no">my_json[&quot;field&quot;][&quot;subfield&quot;]</code> ）。</p></li>
+<li><p>そのキーへの<strong>JSONパスを</strong> <code translate="no">json_path</code> として<strong>指定</strong>します。ダイナミック・フィールドはJSONとして格納されるので、<code translate="no">&quot;color&quot;</code> のように指定することもできますし、入れ子構造になっている場合は、より深いパスを指定することもできます（例えば、<code translate="no">my_json[&quot;field&quot;][&quot;subfield&quot;]</code> ）。</p></li>
 <li><p><strong>INVERTEDインデックスを作成する</strong>。現在のところ、<code translate="no">INVERTED</code> タイプのみがJSONパスのインデックスに対応しています。</p></li>
 </ol>
 <p>パラメータと考慮点の詳細については、<a href="/docs/ja/use-json-fields.md#Index-a-JSON-field">JSONフィールドのインデックスを</a>参照してください。</p>
