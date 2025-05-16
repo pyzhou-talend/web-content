@@ -70,6 +70,7 @@ summary: >-
     <a href="#java">Java</a>
     <a href="#javascript">NodeJS</a>
     <a href="#go">Go</a>
+    <a href="#bash">cURL</a>
 </div>
 <pre><code translate="no" class="language-python"><span class="hljs-comment"># 3. Create a collection in customized setup mode</span>
 <span class="hljs-keyword">from</span> pymilvus <span class="hljs-keyword">import</span> MilvusClient, DataType
@@ -421,7 +422,7 @@ curl --request POST \
 }&quot;</span>
 <button class="copy-code-btn"></button></code></pre>
 <p>You can also create a collection without any index parameters and add them afterward. In this case, Milvus does not load the collection upon its creation. .</p>
-<p>The following code snippet demonstrates how to create a collection without a collection, and the load status of the collection remains unloaded upon creation.</p>
+<p>The following code snippet demonstrates how to create a collection without an index, and the load status of the collection remains unloaded upon creation.</p>
 <div class="multipleCode">
     <a href="#python">Python</a>
     <a href="#java">Java</a>
@@ -523,7 +524,6 @@ curl --request POST \
     \&quot;collectionName\&quot;: \&quot;customized_setup_2\&quot;
 }&quot;</span>
 <button class="copy-code-btn"></button></code></pre>
-<p>Milvus also provides a way for you to create a collection instantly. For details, refer to <a href="/docs/create-collection-instantly.md">Create Collection Instantly</a>.</p>
 <h2 id="Set-Collection-Properties" class="common-anchor-header">Set Collection Properties<button data-href="#Set-Collection-Properties" class="anchor-icon" translate="no">
       <svg translate="no"
         aria-hidden="true"
@@ -786,6 +786,6 @@ curl --request POST \
     \&quot;params\&quot;: <span class="hljs-variable">$params</span>
 }&quot;</span>
 <button class="copy-code-btn"></button></code></pre>
-<p>For more on consistency levels, see <a href="/docs/consistency.md">Consistency Level</a>.</p>
+<p>For more on consistency levels, see <a href="/docs/tune_consistency.md">Consistency Level</a>.</p>
 <h3 id="Enable-Dynamic-Field" class="common-anchor-header">Enable Dynamic Field</h3><p>The dynamic field in a collection is a reserved JavaScript Object Notation (JSON) field named <strong>$meta</strong>. Once you have enabled this field, Milvus saves all non-schema-defined fields carried in each entity and their values as key-value pairs in the reserved field.</p>
 <p>For details on how to use the dynamic field, refer to <a href="/docs/enable-dynamic-field.md">Dynamic Field</a>.</p>
