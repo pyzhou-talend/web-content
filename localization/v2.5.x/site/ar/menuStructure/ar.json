@@ -74,7 +74,7 @@
             "children": []
           },
           {
-            "label": "تشغيل ميلفوس ستاندالون",
+            "label": "تشغيل ميلفوس مستقل",
             "id": "run_milvus_docker",
             "order": 2,
             "isMenu": true,
@@ -348,12 +348,6 @@
             "children": []
           },
           {
-            "label": "إنشاء المجموعة على الفور",
-            "id": "create-collection-instantly.md",
-            "order": 2,
-            "children": []
-          },
-          {
             "label": "عرض المجموعات",
             "id": "view-collections.md",
             "order": 3,
@@ -524,7 +518,19 @@
                   {
                     "label": "جيبا",
                     "id": "jieba-tokenizer.md",
-                    "order": 1,
+                    "order": 2,
+                    "children": []
+                  },
+                  {
+                    "label": "لينديرا",
+                    "id": "lindera-tokenizer.md",
+                    "order": 3,
+                    "children": []
+                  },
+                  {
+                    "label": "وحدة العناية المركزة",
+                    "id": "icu-tokenizer.md",
+                    "order": 4,
                     "children": []
                   }
                 ]
@@ -587,8 +593,26 @@
                     "id": "stemmer-filter.md",
                     "order": 8,
                     "children": []
+                  },
+                  {
+                    "label": "إزالة الترقيم",
+                    "id": "removepunct-filter.md",
+                    "order": 9,
+                    "children": []
+                  },
+                  {
+                    "label": "ريجكس",
+                    "id": "regex-filter.md",
+                    "order": 10,
+                    "children": []
                   }
                 ]
+              },
+              {
+                "label": "محللون متعددو اللغات",
+                "id": "multi-language-analyzers.md",
+                "order": 4,
+                "children": []
               }
             ]
           },
@@ -1837,6 +1861,18 @@
             "id": "llama_stack_with_milvus.md",
             "order": 12,
             "children": []
+          },
+          {
+            "label": "ن8 ن",
+            "id": "milvus_and_n8n.md",
+            "order": 13,
+            "children": []
+          },
+          {
+            "label": "أي شيءLLLM",
+            "id": "use_milvus_in_anythingllm.md",
+            "order": 14,
+            "children": []
           }
         ]
       },
@@ -1983,6 +2019,12 @@
             "label": "بينتو مل",
             "id": "integrate_with_bentoml.md",
             "order": 5,
+            "children": []
+          },
+          {
+            "label": "تضمينأي شيء",
+            "id": "build_RAG_with_milvus_and_embedAnything.md",
+            "order": 15,
             "children": []
           }
         ]
@@ -2160,6 +2202,12 @@
             "label": "دوكلينج",
             "id": "build_RAG_with_milvus_and_docling.md",
             "order": 11,
+            "children": []
+          },
+          {
+            "label": "NLWeb",
+            "id": "NLWeb_with_milvus.md",
+            "order": 12,
             "children": []
           }
         ]

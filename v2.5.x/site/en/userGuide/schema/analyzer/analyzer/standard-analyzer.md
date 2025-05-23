@@ -119,7 +119,7 @@ Example configuration of custom stop words:
     <a href="#python">Python</a>
     <a href="#java">Java</a>
     <a href="#javascript">NodeJS</a>
-    <a href="#plaintext">plaintext</a>
+    <a href="#go">Go</a>
     <a href="#bash">cURL</a>
 </div>
 
@@ -143,7 +143,7 @@ analyzer_params = {
 }
 ```
 
-```plaintext
+```go
 analyzerParams = map[string]any{"type": "standard", "stop_words": []string{"of"}}
 ```
 
@@ -154,6 +154,8 @@ analyzerParams = map[string]any{"type": "standard", "stop_words": []string{"of"}
 After defining `analyzer_params`, you can apply them to a `VARCHAR` field when defining a collection schema. This allows Milvus to process the text in that field using the specified analyzer for efficient tokenization and filtering. For more information, refer to [Example use](analyzer-overview.md#Example-use).
 
 ## Examples
+
+Before applying the analyzer configuration to your collection schema, verify its behavior using the `run_analyzer` method.
 
 ### Analyzer configuration
 
@@ -194,6 +196,64 @@ analyzerParams='{
     "of"
   ]
 }'
+```
+
+### Verification using `run_analyzer`
+
+<div class="multipleCode">
+    <a href="#python">Python</a>
+    <a href="#java">Java</a>
+    <a href="#javascript">NodeJS</a>
+    <a href="#go">Go</a>
+    <a href="#bash">cURL</a>
+</div>
+
+```python
+from pymilvus import (
+    MilvusClient,
+)
+
+client = MilvusClient(uri="http://localhost:19530")
+
+# Sample text to analyze
+sample_text = "The Milvus vector database is built for scale!"
+
+# Run the standard analyzer with the defined configuration
+result = client.run_analyzer(sample_text, analyzer_params)
+print("Standard analyzer output:", result)
+```
+
+```java
+import io.milvus.v2.client.ConnectConfig;
+import io.milvus.v2.client.MilvusClientV2;
+import io.milvus.v2.service.vector.request.RunAnalyzerReq;
+import io.milvus.v2.service.vector.response.RunAnalyzerResp;
+
+ConnectConfig config = ConnectConfig.builder()
+        .uri("http://localhost:19530")
+        .build();
+MilvusClientV2 client = new MilvusClientV2(config);
+
+List<String> texts = new ArrayList<>();
+texts.add("The Milvus vector database is built for scale!");
+
+RunAnalyzerResp resp = client.runAnalyzer(RunAnalyzerReq.builder()
+        .texts(texts)
+        .analyzerParams(analyzerParams)
+        .build());
+List<RunAnalyzerResp.AnalyzerResult> results = resp.getResults();
+```
+
+```javascript
+// javascript
+```
+
+```go
+// go
+```
+
+```bash
+# restful
 ```
 
 ### Expected output

@@ -7,10 +7,10 @@ summary: >-
   efficient similarity searches.
 title: Text-to-Image Search with Milvus
 ---
-<p><a href="https://colab.research.google.com/github/milvus-io/bootcamp/blob/master/bootcamp/tutorials/quickstart/text_image_search_with_milvus.ipynb" target="_parent">
+<p><a href="https://colab.research.google.com/github/milvus-io/bootcamp/blob/master/tutorials/quickstart/text_image_search_with_milvus.ipynb" target="_parent">
 <img translate="no" src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
-<a href="https://github.com/milvus-io/bootcamp/blob/master/bootcamp/tutorials/quickstart/text_image_search_with_milvus.ipynb" target="_blank">
+<a href="https://github.com/milvus-io/bootcamp/blob/master/tutorials/quickstart/text_image_search_with_milvus.ipynb" target="_blank">
 <img translate="no" src="https://img.shields.io/badge/View%20on%20GitHub-555555?style=flat&logo=github&logoColor=white" alt="GitHub Repository"/>
 </a></p>
 <h1 id="Text-to-Image-Search-with-Milvus" class="common-anchor-header">Text-to-Image Search with Milvus<button data-href="#Text-to-Image-Search-with-Milvus" class="anchor-icon" translate="no">
@@ -124,7 +124,7 @@ model.<span class="hljs-built_in">eval</span>()
 <button class="copy-code-btn"></button></code></pre>
 <h3 id="Data-Ingestion" class="common-anchor-header">Data Ingestion</h3><p>To enable semantic image search, we first need to generate embeddings for all images and store them in a vector database for efficient indexing and retrieval. This section provides a step-by-step guide to ingesting image data into Milvus.</p>
 <p><strong>1. Create Milvus Collection</strong></p>
-<p>Before storing image embeddings, you need to create a Milvus collection. The following code demonstrates how to create a collection using <a href="https://milvus.io/docs/create-collection-instantly.md">quick start mode</a> with the default COSINE metric type. The collection includes the following fields:</p>
+<p>Before storing image embeddings, you need to create a Milvus collection. The following code demonstrates how to create a collection in a quick-setup mode with the default COSINE metric type. The collection includes the following fields:</p>
 <ul>
 <li><p><code translate="no">id</code>: A primary field with auto ID enabled.</p></li>
 <li><p><code translate="no">vector</code>: A field for storing floating-point vector embeddings.</p></li>
